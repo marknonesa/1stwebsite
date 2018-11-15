@@ -3,15 +3,25 @@
   "version": "1.0.0",
   "description": "La union mock website",
   "main": "index.js",
+  "homepage": "https://marknonesa.github.io/LaUnion.com",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node": "^10.10.0"
   },
   "devDependencies": {
     "node-sass": "^4.9.3"
   },
   "scripts": {
-    "sass": "node-sass scss/main.scss -o css/ -w"
+    "sass": "node-sass scss/main.scss -o css/ -w",
+    "deploy": "gh-pages -d La Union Website"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marknonesa/LaUnion.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marknonesa/LaUnion.com/issues"
+  }
 }
