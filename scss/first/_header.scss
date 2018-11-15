@@ -1,0 +1,112 @@
+@import "../_mixins";
+
+.header {
+  position: relative;
+  z-index: 2;
+  // margin-right: 250px;
+
+  // .Landing-image {
+  //   position: relative;
+  //   z-index: 2;
+  //   // margin-right: 250px;
+  //   height: 100vh;
+  //   background-image: url("../img/LaUnion.jpg");
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  //   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  // }
+
+  &__image {
+    height: 100vh;
+    position: relative;
+    background-image: url("../img/LaUnion.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+
+    @include respond(phone) {
+      height: 65vh;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%);
+    }
+    @include respond(tab-port) {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+    }
+  }
+
+  &__text-box {
+    //display: block;
+    display: inline-block;
+    position: absolute;
+    width: 80%;
+    top: 45%;
+    left: 50%;
+    text-align: center;
+    mix-blend-mode: exclusion;
+    font-family: "DK Cinnabar Brush";
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    line-height: 2rem;
+    @include respond(phone) {
+      width: 100%;
+      top: 35%;
+    }
+    @include respond(tab-port) {
+    }
+  }
+
+  &__LaUnion {
+    text-align: center;
+    // display: block;
+    display: inline;
+    font-size: 14vw;
+    color: white;
+    mix-blend-mode: exclusion;
+    line-height: 0.2em;
+    // letter-spacing: 1.75rem;
+
+    @include respond(phone) {
+      font-size: 9em;
+      letter-spacing: 0em;
+      line-height: 1em;
+    }
+  }
+  &__life {
+    text-align: center;
+    line-height: 0.5em;
+    // top: 90%;
+    font-size: 6.5em;
+    color: white;
+    font-family: "OCR";
+
+    @include respond(tab-land) {
+      font-size: 8em;
+    }
+    @include respond(tab-port) {
+      font-size: 6em;
+    }
+    @include respond(phone) {
+      font-size: 4em;
+      letter-spacing: 0em;
+      line-height: 1em;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: "Open Sans", "Arial Narrow", Arial, sans-serif;
+    top: 65%;
+    height: 100%;
+    width: 100%;
+  }
+}

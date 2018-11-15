@@ -1,0 +1,92 @@
+$launion-color: #012f3f;
+$pink-sky: #e8b2bf;
+
+.menu-btn {
+  z-index: 2;
+  position: fixed;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+
+  // padding-right: 11rem;
+  //   @include easeOut;
+
+  .btn-line {
+    width: 35px;
+    height: 5px;
+    margin: 0 0 5px 0;
+    background: $launion-color;
+    opacity: 0.8;
+    // @include easeOut;
+  }
+  &:hover {
+    transform: translateX(-5px);
+    -webkit-transform: translateX(-5px);
+    -moz-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    -o-transform: translateX(-5px);
+  }
+}
+.menu-bar {
+  margin-right: 250px;
+}
+
+.sidenav {
+  font-family: "Courier New", Courier, monospace;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: antiquewhite;
+  // background-image: url("../img/Sidebar-photo.jpg");
+  overflow-x: hidden;
+  transition: 0.5s;
+  // padding-top: 20px;
+  opacity: 0.5;
+  -webkit-transition: all 0.8s ease;
+  // -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  // clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.sidenav a {
+  font-family: "DK Cinnabar Brush", "Courier New", Courier, monospace;
+
+  text-transform: capitalize;
+  margin-top: 5rem;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: $pink-sky;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+}
+.sidenav a:hover {
+  color: $launion-color;
+}
+.sidenav .closebtn {
+  position: absolute;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  top: 0;
+  font-size: 36px;
+}
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+// #toggle {
+//   display: none;
+// }
+// #toggle:checked + .sidenav {
+//   overflow-x: visible;
+// }

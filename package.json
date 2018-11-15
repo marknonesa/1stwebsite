@@ -1,0 +1,17 @@
+{
+  "name": "la",
+  "version": "1.0.0",
+  "description": "La union mock website",
+  "main": "index.js",
+  "dependencies": {
+    "node": "^10.10.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  },
+  "scripts": {
+    "sass": "node-sass scss/main.scss -o css/ -w"
+  },
+  "author": "",
+  "license": "ISC"
+}

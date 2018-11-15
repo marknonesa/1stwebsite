@@ -1,0 +1,36 @@
+@import "mixins";
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-center-text-left {
+  text-align: left;
+}
+
+.u-margin-bottom-8 {
+  margin-bottom: 8rem;
+}
+.u-margin-bottom-small {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+
+  @include respond(phone) {
+    margin-top: 0;
+  }
+}
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+.u-margin-bottom-big {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.u-margin-top-big {
+  margin-top: 1px;
+}
+
+.u-margin-top-huge {
+  margin-top: 10rem;
+}
